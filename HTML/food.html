@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodExpress — Item</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <span>FoodExpress</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="orders.html">Orders</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 0;">
+    <div class="hero-card" style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+      <img id="foodImage" alt="Food image" style="border-radius:14px; border:1px solid rgba(0,0,0,0.06);">
+      <div style="display:grid; gap:10px;">
+        <h1 id="foodTitle">Item</h1>
+        <div id="foodDesc" style="color:#4b5563;">Description</div>
+        <div><strong id="foodPrice">$0.00</strong></div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="button" id="detailAddToCart">Add to Cart</button>
+          <button class="button primary" id="detailOrderNow">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Location Modal -->
+  <div class="modal-backdrop" id="orderModal">
+    <div class="modal">
+      <h3>Delivery Location</h3>
+      <p>Enter your city or pincode to get an estimate.</p>
+      <div class="row">
+        <input class="input" id="locationInput" type="text" placeholder="e.g., Seattle or 98101">
+        <div id="estimateText" class="hidden"></div>
+        <div class="modal-actions">
+          <button class="button primary" id="getEstimateBtn">Get Estimate</button>
+          <button class="button hidden" id="proceedPayBtn">Proceed to Pay</button>
+          <button class="button" id="closeModalBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    &copy; 2025 FoodExpress. All rights reserved.
+  </footer>
+
+  <script src="../JS/app.js"></script>
+</body>
+</html>
+
+

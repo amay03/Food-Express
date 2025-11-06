@@ -1,5 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodExpress — Menu</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <span>FoodExpress</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="orders.html">Orders</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container menu-section">
+    <h1 style="margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+      <span>Menu</span>
+      <button class="button" id="openCartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </h1>
+
+    <div class="hero-card" style="display:grid; gap:10px; margin-bottom:14px;">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <input class="input" id="menuSearch" type="text" placeholder="Search menu (e.g., burger, fries)">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="button filter-btn" data-filter="all">All</button>
+          <button class="button filter-btn" data-filter="burgers">Burgers</button>
+          <button class="button filter-btn" data-filter="snacks">Snacks</button>
+          <button class="button filter-btn" data-filter="drinks">Drinks</button>
+          <button class="button filter-btn" data-filter="desserts">Desserts</button>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="burgers" style="margin: 12px 0;">Burgers</h2>
+    <div class="menu-grid" data-section="burgers">
+      <article class="food-card" data-item="Classic Burger" data-price="6.99" data-category="burgers" data-desc="Grilled beef patty, lettuce, tomato, cheese" data-img="https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1200&auto=format&fit=crop" alt="Classic Burger">
+        <div class="food-body">
+          <div class="food-title">Classic Burger</div>
+          <div class="food-meta">Grilled beef patty, lettuce, tomato, cheese</div>
+          <div class="price-row"><span>$6.99</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Chicken Burger" data-price="7.49" data-category="burgers" data-desc="Crispy chicken, pickles, special sauce" data-img="https://images.unsplash.com/photo-1606756790138-261d2b21cd8e?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd8e?q=80&w=1200&auto=format&fit=crop" alt="Chicken Burger">
+        <div class="food-body">
+          <div class="food-title">Chicken Burger</div>
+          <div class="food-meta">Crispy chicken, pickles, special sauce</div>
+          <div class="price-row"><span>$7.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Veggie Burger" data-price="6.49" data-category="burgers" data-desc="Lentil patty, avocado, greens" data-img="https://images.unsplash.com/photo-1551782450-17144c3fa8f8?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1551782450-17144c3fa8f8?q=80&w=1200&auto=format&fit=crop" alt="Veggie Burger">
+        <div class="food-body">
+          <div class="food-title">Veggie Burger</div>
+          <div class="food-meta">Lentil patty, avocado, greens</div>
+          <div class="price-row"><span>$6.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+    </div>
+
+    <h2 id="snacks" style="margin: 20px 0 12px;">Snacks</h2>
+    <div class="menu-grid" data-section="snacks">
+      <article class="food-card" data-item="Fries" data-price="2.99" data-category="snacks" data-desc="Crispy golden fries" data-img="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop" alt="Fries">
+        <div class="food-body">
+          <div class="food-title">Fries</div>
+          <div class="food-meta">Crispy golden fries</div>
+          <div class="price-row"><span>$2.99</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Onion Rings" data-price="3.49" data-category="snacks" data-desc="Crunchy battered rings" data-img="https://images.unsplash.com/photo-1639024471285-9a4aabb0ed13?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1639024471285-9a4aabb0ed13?q=80&w=1200&auto=format&fit=crop" alt="Onion Rings">
+        <div class="food-body">
+          <div class="food-title">Onion Rings</div>
+          <div class="food-meta">Crunchy battered rings</div>
+          <div class="price-row"><span>$3.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Nachos" data-price="4.49" data-category="snacks" data-desc="Cheese, jalapeño, salsa" data-img="https://images.unsplash.com/photo-1604908176997-431651c7c1c3?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1604908176997-431651c7c1c3?q=80&w=1200&auto=format&fit=crop" alt="Nachos">
+        <div class="food-body">
+          <div class="food-title">Loaded Nachos</div>
+          <div class="food-meta">Cheese, jalapeño, salsa</div>
+          <div class="price-row"><span>$4.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+    </div>
+
+    <h2 id="drinks" style="margin: 20px 0 12px;">Drinks</h2>
+    <div class="menu-grid" data-section="drinks">
+      <article class="food-card" data-item="Cola" data-price="1.49" data-category="drinks" data-desc="Chilled soft drink" data-img="https://images.unsplash.com/photo-1600271891605-7c11a56d5140?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1600271891605-7c11a56d5140?q=80&w=1200&auto=format&fit=crop" alt="Cola">
+        <div class="food-body">
+          <div class="food-title">Cola</div>
+          <div class="food-meta">Chilled soft drink</div>
+          <div class="price-row"><span>$1.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Iced Tea" data-price="1.99" data-category="drinks" data-desc="Refreshing lemon tea" data-img="https://images.unsplash.com/photo-1556679343-c7306c2b1e87?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c2b1e87?q=80&w=1200&auto=format&fit=crop" alt="Iced Tea">
+        <div class="food-body">
+          <div class="food-title">Iced Tea</div>
+          <div class="food-meta">Refreshing lemon tea</div>
+          <div class="price-row"><span>$1.99</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Milkshake" data-price="2.49" data-category="drinks" data-desc="Vanilla, chocolate or strawberry" data-img="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1200&auto=format&fit=crop" alt="Milkshake">
+        <div class="food-body">
+          <div class="food-title">Milkshake</div>
+          <div class="food-meta">Vanilla, chocolate or strawberry</div>
+          <div class="price-row"><span>$2.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+    </div>
+
+    <h2 id="desserts" style="margin: 20px 0 12px;">Desserts</h2>
+    <div class="menu-grid" data-section="desserts">
+      <article class="food-card" data-item="Brownie" data-price="3.49" data-category="desserts" data-desc="Rich and gooey" data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop" alt="Brownie">
+        <div class="food-body">
+          <div class="food-title">Chocolate Brownie</div>
+          <div class="food-meta">Rich and gooey</div>
+          <div class="price-row"><span>$3.49</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Cheesecake" data-price="3.99" data-category="desserts" data-desc="Classic NY style" data-img="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
+        <div class="food-body">
+          <div class="food-title">Cheesecake</div>
+          <div class="food-meta">Classic NY style</div>
+          <div class="price-row"><span>$3.99</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+      <article class="food-card" data-item="Ice Cream" data-price="2.99" data-category="desserts" data-desc="2 scoops of your choice" data-img="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop" alt="Ice Cream">
+        <div class="food-body">
+          <div class="food-title">Ice Cream</div>
+          <div class="food-meta">2 scoops of your choice</div>
+          <div class="price-row"><span>$2.99</span><button class="button order-btn">Add to Cart</button></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Location / Payment Modal -->
+  <div class="modal-backdrop" id="orderModal">
+    <div class="modal">
+      <h3>Delivery Location</h3>
+      <p>Enter your city or pincode to get an estimate.</p>
+      <div class="row">
+        <input class="input" id="locationInput" type="text" placeholder="e.g., Seattle or 98101">
+        <div id="estimateText" class="hidden"></div>
+        <div class="modal-actions">
+          <button class="button primary" id="getEstimateBtn">Get Estimate</button>
+          <button class="button hidden" id="proceedPayBtn">Proceed to Pay</button>
+          <button class="button" id="closeModalBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="modal-backdrop" id="cartDrawer" style="justify-content:flex-end;">
+    <div class="modal" style="height:100%; max-width:420px; border-left: 1px solid rgba(0,0,0,0.06);">
+      <h3>Your Cart</h3>
+      <div id="cartItems" style="margin-top:10px; display:grid; gap:8px;"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-top:12px;">
+        <strong>Total:</strong>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <div class="modal-actions">
+        <button class="button" id="closeCartBtn">Close</button>
+        <button class="button primary" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    &copy; 2025 FoodExpress. All rights reserved.
+  </footer>
+
+  <script src="../JS/app.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">

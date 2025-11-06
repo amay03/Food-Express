@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="../CSS/order.css">
+
+    <header>
+        <h2>Food Express</h2>
+        <nav>
+            <a href="index1.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+        </nav>
+    </header>
+    <section id="order">
+      
+<form>
+    <h2>Place you Order</h2>
+    <p>Fill your details below to complete your order. </p>
+<label for ="fullname">Full Name: </label>
+<br>
+<input type="text" id="Fullname"
+name="fullname" placeholder="Enter your full name" required><br><br>
+<label for ="address">Delivery Adress:</label><br>
+<input type ="text" id="address" rows="3" placeholder="'Enter your delivery address" required></textarea><br><br>
+<label for ="mobile no.">Enter your  Mobile Number:</label><br>
+<input type: ="tel" id="Mobile Number" placeholder="Enter your Mobile Number" pattern="[0-9]{10}" maxlength="10" required><br><br>
+
+
+
+
+
+<label for="Payment">Payment Method:</label><br>
+<select id="payment" name="payment" required>
+    <option value="cash">Cash on Delivery</option>
+     <option value="card">Credit card/debit card</option>
+     <option value="upi">UPI</option>
+    
+
+</select> 
+<br><br>
+
+<button type="submit">Place your Order</button>
+</form>
+  
+  <footer>
+    <p id="foot">© 2025 Food Express. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+        
+    </section>
+    
+</body>
+</html>

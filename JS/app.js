@@ -109,7 +109,7 @@
       row.style.display = 'flex';
       row.style.alignItems = 'center';
       row.style.justifyContent = 'space-between';
-      row.innerHTML = '<div><strong>' + item.name + '</strong><div style="color:#4b5563; font-size:14px;">$' + item.price.toFixed(2) + ' × ' + item.qty + '</div></div>' +
+      row.innerHTML = '<div><strong>' + item.name + '</strong><div style="color:#4b5563; font-size:14px;">₹' + Math.round(item.price) + ' × ' + item.qty + '</div></div>' +
         '<div style="display:flex; gap:6px;">' +
         '<button class="button" data-action="dec" data-index="' + index + '">-</button>' +
         '<button class="button" data-action="inc" data-index="' + index + '">+</button>' +
@@ -117,7 +117,7 @@
         '</div>';
       cartItems.appendChild(row);
     });
-    cartTotalEl.textContent = '$' + total.toFixed(2);
+    cartTotalEl.textContent = '₹' + Math.round(total);
     if (cartCount) cartCount.textContent = cart.reduce(function (s, i) { return s + i.qty; }, 0);
     // item controls
     qsa('#cartItems .button').forEach(function (b) {
@@ -223,7 +223,7 @@
     var descEl = qs('#foodDesc');
     if (descEl) descEl.textContent = desc;
     var priceEl = qs('#foodPrice');
-    if (priceEl) priceEl.textContent = '$' + price.toFixed(2);
+    if (priceEl) priceEl.textContent = '₹' + Math.round(price);
     var imgEl = qs('#foodImage');
     if (imgEl && img) { imgEl.src = img; imgEl.alt = name; }
 
@@ -294,7 +294,7 @@
           var total = (o.items || []).reduce(function (s, it) { return s + it.price * it.qty; }, 0);
           div.innerHTML = '<div style="display:flex; align-items:center; justify-content:space-between;">' +
             '<div><strong>Order ' + o.id + '</strong><div style="color:#4b5563">' + new Date(o.when).toLocaleString() + '</div></div>' +
-            '<div><strong>$' + total.toFixed(2) + '</strong></div>' +
+            '<div><strong>₹' + Math.round(total) + '</strong></div>' +
           '</div>';
           ordersList.appendChild(div);
         });

@@ -50,15 +50,17 @@ nav a:hover {
 .menu-item {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 2px 2px rgba(0,0,0,0,1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 15px;
-  transition: transform 0.3s,box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px;
 }
 .menu-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.menu_item img{
+.menu-item img {
   width: 100%;
   height: 160px;
   border-radius: 10px;
@@ -71,7 +73,7 @@ nav a:hover {
 }
 
 .menu-item p {
-  columns:gray;
+  color: gray;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -95,7 +97,8 @@ nav a:hover {
 }
 
 .menu-item button:hover {
-  background-color: orange;
+  background-color: #e64a19;
+  transform: translateY(-1px);
 }
 footer {
   text-align: center;

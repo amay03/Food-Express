@@ -37,7 +37,7 @@
       <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
         <input class="input" id="menuSearch" type="text" placeholder="Search menu (e.g., burger, fries)">
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="button filter-btn" data-filter="all">All</button>
+          <button class="button filter-btn active" data-filter="all">All</button>
           <button class="button filter-btn" data-filter="burgers">Burgers</button>
           <button class="button filter-btn" data-filter="snacks">Snacks</button>
           <button class="button filter-btn" data-filter="drinks">Drinks</button>
@@ -48,112 +48,112 @@
 
     <h2 id="burgers" style="margin: 12px 0;">Burgers</h2>
     <div class="menu-grid" data-section="burgers">
-      <article class="food-card" data-item="Classic Burger" data-price="6.99" data-category="burgers" data-desc="Grilled beef patty, lettuce, tomato, cheese" data-img="https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1200&auto=format&fit=crop" alt="Classic Burger">
+      <article class="food-card" data-item="Classic Burger" data-price="580" data-category="burgers" data-desc="Grilled beef patty, lettuce, tomato, cheese" data-img="/images/burger-classic.jpg">
+        <img src="/images/burger-classic.jpg" alt="Classic Burger" onerror="this.src='https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Classic Burger</div>
           <div class="food-meta">Grilled beef patty, lettuce, tomato, cheese</div>
-          <div class="price-row"><span>$6.99</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹580</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Chicken Burger" data-price="7.49" data-category="burgers" data-desc="Crispy chicken, pickles, special sauce" data-img="https://images.unsplash.com/photo-1606756790138-261d2b21cd8e?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd8e?q=80&w=1200&auto=format&fit=crop" alt="Chicken Burger">
+      <article class="food-card" data-item="Chicken Burger" data-price="620" data-category="burgers" data-desc="Crispy chicken, pickles, special sauce" data-img="/images/burger-chicken.jpg">
+        <img src="/images/burger-chicken.jpg" alt="Chicken Burger" onerror="this.src='https://images.unsplash.com/photo-1606756790138-261d2b21cd8e?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Chicken Burger</div>
           <div class="food-meta">Crispy chicken, pickles, special sauce</div>
-          <div class="price-row"><span>$7.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹620</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Veggie Burger" data-price="6.49" data-category="burgers" data-desc="Lentil patty, avocado, greens" data-img="https://images.unsplash.com/photo-1551782450-17144c3fa8f8?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1551782450-17144c3fa8f8?q=80&w=1200&auto=format&fit=crop" alt="Veggie Burger">
+      <article class="food-card" data-item="Veggie Burger" data-price="540" data-category="burgers" data-desc="Lentil patty, avocado, greens" data-img="/images/burger-veggie.jpg">
+        <img src="/images/burger-veggie.jpg" alt="Veggie Burger" onerror="this.src='https://images.unsplash.com/photo-1551782450-17144c3fa8f8?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Veggie Burger</div>
           <div class="food-meta">Lentil patty, avocado, greens</div>
-          <div class="price-row"><span>$6.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹540</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
     </div>
 
     <h2 id="snacks" style="margin: 20px 0 12px;">Snacks</h2>
     <div class="menu-grid" data-section="snacks">
-      <article class="food-card" data-item="Fries" data-price="2.99" data-category="snacks" data-desc="Crispy golden fries" data-img="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop" alt="Fries">
+      <article class="food-card" data-item="Fries" data-price="250" data-category="snacks" data-desc="Crispy golden fries" data-img="/images/fries.jpg">
+        <img src="/images/fries.jpg" alt="Fries" onerror="this.src='https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Fries</div>
           <div class="food-meta">Crispy golden fries</div>
-          <div class="price-row"><span>$2.99</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹250</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Onion Rings" data-price="3.49" data-category="snacks" data-desc="Crunchy battered rings" data-img="https://images.unsplash.com/photo-1639024471285-9a4aabb0ed13?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1639024471285-9a4aabb0ed13?q=80&w=1200&auto=format&fit=crop" alt="Onion Rings">
+      <article class="food-card" data-item="Onion Rings" data-price="290" data-category="snacks" data-desc="Crunchy battered rings" data-img="/images/onion-rings.jpg">
+        <img src="/images/onion-rings.jpg" alt="Onion Rings" onerror="this.src='https://images.unsplash.com/photo-1639024471285-9a4aabb0ed13?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Onion Rings</div>
           <div class="food-meta">Crunchy battered rings</div>
-          <div class="price-row"><span>$3.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹290</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Nachos" data-price="4.49" data-category="snacks" data-desc="Cheese, jalapeño, salsa" data-img="https://images.unsplash.com/photo-1604908176997-431651c7c1c3?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1604908176997-431651c7c1c3?q=80&w=1200&auto=format&fit=crop" alt="Nachos">
+      <article class="food-card" data-item="Nachos" data-price="370" data-category="snacks" data-desc="Cheese, jalapeño, salsa" data-img="/images/nachos.jpg">
+        <img src="/images/nachos.jpg" alt="Nachos" onerror="this.src='https://images.unsplash.com/photo-1604908176997-431651c7c1c3?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Loaded Nachos</div>
           <div class="food-meta">Cheese, jalapeño, salsa</div>
-          <div class="price-row"><span>$4.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹370</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
     </div>
 
     <h2 id="drinks" style="margin: 20px 0 12px;">Drinks</h2>
     <div class="menu-grid" data-section="drinks">
-      <article class="food-card" data-item="Cola" data-price="1.49" data-category="drinks" data-desc="Chilled soft drink" data-img="https://images.unsplash.com/photo-1600271891605-7c11a56d5140?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1600271891605-7c11a56d5140?q=80&w=1200&auto=format&fit=crop" alt="Cola">
+      <article class="food-card" data-item="Cola" data-price="125" data-category="drinks" data-desc="Chilled soft drink" data-img="/images/cola.jpg">
+        <img src="/images/cola.jpg" alt="Cola" onerror="this.src='https://images.unsplash.com/photo-1600271891605-7c11a56d5140?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Cola</div>
           <div class="food-meta">Chilled soft drink</div>
-          <div class="price-row"><span>$1.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹125</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Iced Tea" data-price="1.99" data-category="drinks" data-desc="Refreshing lemon tea" data-img="https://images.unsplash.com/photo-1556679343-c7306c2b1e87?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1556679343-c7306c2b1e87?q=80&w=1200&auto=format&fit=crop" alt="Iced Tea">
+      <article class="food-card" data-item="Iced Tea" data-price="165" data-category="drinks" data-desc="Refreshing lemon tea" data-img="/images/iced-tea.jpg">
+        <img src="/images/iced-tea.jpg" alt="Iced Tea" onerror="this.src='https://images.unsplash.com/photo-1556679343-c7306c2b1e87?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Iced Tea</div>
           <div class="food-meta">Refreshing lemon tea</div>
-          <div class="price-row"><span>$1.99</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹165</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Milkshake" data-price="2.49" data-category="drinks" data-desc="Vanilla, chocolate or strawberry" data-img="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1200&auto=format&fit=crop" alt="Milkshake">
+      <article class="food-card" data-item="Milkshake" data-price="210" data-category="drinks" data-desc="Vanilla, chocolate or strawberry" data-img="/images/milkshake.jpg">
+        <img src="/images/milkshake.jpg" alt="Milkshake" onerror="this.src='https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Milkshake</div>
           <div class="food-meta">Vanilla, chocolate or strawberry</div>
-          <div class="price-row"><span>$2.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹210</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
     </div>
 
     <h2 id="desserts" style="margin: 20px 0 12px;">Desserts</h2>
     <div class="menu-grid" data-section="desserts">
-      <article class="food-card" data-item="Brownie" data-price="3.49" data-category="desserts" data-desc="Rich and gooey" data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop" alt="Brownie">
+      <article class="food-card" data-item="Brownie" data-price="290" data-category="desserts" data-desc="Rich and gooey" data-img="/images/brownie.jpg">
+        <img src="/images/brownie.jpg" alt="Brownie" onerror="this.src='https://images.unsplash.com/photo-1606313564200-e75d5e30476e?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Chocolate Brownie</div>
           <div class="food-meta">Rich and gooey</div>
-          <div class="price-row"><span>$3.49</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹290</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Cheesecake" data-price="3.99" data-category="desserts" data-desc="Classic NY style" data-img="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1200&auto=format&fit=crop" alt="Cheesecake">
+      <article class="food-card" data-item="Cheesecake" data-price="330" data-category="desserts" data-desc="Classic NY style" data-img="/images/cheesecake.jpg">
+        <img src="/images/cheesecake.jpg" alt="Cheesecake" onerror="this.src='https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Cheesecake</div>
           <div class="food-meta">Classic NY style</div>
-          <div class="price-row"><span>$3.99</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹330</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
-      <article class="food-card" data-item="Ice Cream" data-price="2.99" data-category="desserts" data-desc="2 scoops of your choice" data-img="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop" alt="Ice Cream">
+      <article class="food-card" data-item="Ice Cream" data-price="250" data-category="desserts" data-desc="2 scoops of your choice" data-img="/images/ice-cream.jpg">
+        <img src="/images/ice-cream.jpg" alt="Ice Cream" onerror="this.src='https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop'">
         <div class="food-body">
           <div class="food-title">Ice Cream</div>
           <div class="food-meta">2 scoops of your choice</div>
-          <div class="price-row"><span>$2.99</span><button class="button order-btn">Add to Cart</button></div>
+          <div class="price-row"><span>₹250</span><button class="button order-btn">Add to Cart</button></div>
         </div>
       </article>
     </div>
@@ -183,7 +183,7 @@
       <div id="cartItems" style="margin-top:10px; display:grid; gap:8px;"></div>
       <div style="display:flex; align-items:center; justify-content:space-between; margin-top:12px;">
         <strong>Total:</strong>
-        <strong id="cartTotal">$0.00</strong>
+        <strong id="cartTotal">₹0</strong>
       </div>
       <div class="modal-actions">
         <button class="button" id="closeCartBtn">Close</button>
@@ -197,115 +197,6 @@
   </footer>
 
   <script src="../JS/app.js"></script>
+  <script src="js/menu.js"></script>
 </body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Express</title>
-  <link rel="stylesheet" href="../CSS/menu.css">
-</head>
-
-<body>
-  <header>
-    <h1>Food Express</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="order.html">Order</a>
-      <a href="contact.html">Contact</a>
-
-    </nav>
-  </header>
-  <section class="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-container">
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1559978137-8c560d91e9e1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"
-          alt="pizza" width="200">
-        <h3>Cheese Pizza</h3>
-        <p>Delicious cheesy pizza with soft crust.</p>
-        <div>₹199</div>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="menu-item">
-        <img src="https://tse4.mm.bing.net/th/id/OIP.GFe1ZqoBXpXnYjI1CFQtFgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-          alt="Veg Momos" width="200">
-        <h3>Veg Momos</h3>
-        <p>Steamed dumpling filled with veggies.</p>
-        <div>₹89</div>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="menu-item">
-
-        <img
-          src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnJlbmNoJTIwZnJpZXN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000"
-          alt="French Fries" width="200">
-        <h3>French Fries</h3>
-        <p>Golden fries with perfect crunch..</p>
-        <div>₹159</div>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="menu-item">
-
-        <img
-          src="https://th.bing.com/th/id/R.0e3ce58b0f69cd21fb8a69eb90a2734c?rik=mndsseSffZfo8A&riu=http%3a%2f%2fwww.herbsjoy.com%2fwp-content%2fuploads%2f2024%2f11%2fmaxresdefault-3.jpg&ehk=w%2b9MKCNqi%2b1fR1uKQaIXPuy0UQqRs9%2fJyGAwqzp7inA%3d&risl=&pid=ImgRaw&r=0"
-          alt="chilli patato" width="200">
-        <h3>Chilli patato</h3>
-        <p>Crispy potatoes tossed in spicy sauce.</p>
-        <div>₹190</div>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="menu-item">
-
-        <img src="https://2.bp.blogspot.com/-neI6rKuvsKI/VyN8GMrfhzI/AAAAAAAAHls/hugFFTKYgs8lrtUSXx0iEyG-KZwL4bPbwCLcB/s1600/tandoori-paneer-tikka4.jpg"
-    
-          alt=" Paneer Tikka" width="200">
-
-        <h3>Paneer Tikka</h3>
-        <p>Grilled paneer cubes with rich spices.</p>
-        <div>₹200</div>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="menu-item">
-
-        <img
-          src="https://media.istockphoto.com/photos/fresh-tasty-burger-picture-id495203930?k=6&m=495203930&s=612x612&w=0&h=PLGaUd_NZ7NOueKUTAEMnc4MmL0PVIgMidXRrIy5B3o="
-          alt="burger" width="200">
-
-        <h3>Burger</h3>
-        <p>Loaded burger with veggies and cheese.</p>
-        <div>₹80</div>
-        <button>Add to Cart</button>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
 </html>
